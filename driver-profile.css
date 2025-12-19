@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0B0C10;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  overflow-x: hidden;
+  padding-top: 80px; 
+  margin-top: -80px; 
+}
+
+.navbar .f1-logo {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+
+/* --- NAVBAR --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #FF1E00;
+}
+
+#back-button{
+  color: white;
+  transition: 0.15s ;
+}
+#back-button :hover{
+  color: #FF1E00;
+}
+.btn-back {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); 
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #FF1E00;
+  padding: 8px 15px;
+  right: 60px; 
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #FF1E00; 
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  position: relative;
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+  overflow: hidden;
+  margin-top: 0;
+  text-align: center;
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(11,12,16,0) 50%, #0B0C10 100%);
+  z-index: -3;
+
+}
+
+.profile-hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  filter: brightness(60%);
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
+  
+}
+
+
+.champions-hero h1,
+.profile-hero h1 {
+  font-size: 8rem; 
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FF1E00;
+  text-shadow: 0 0 15px rgba(255, 30, 0, 0.8), 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 2; 
+  position: relative;
+}
+
+
+/* --- PROFILE CONTENT (driver-profile.html) --- */
+
+.profile-content {
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+/* Kontainer Detail Profil */
+.profile-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Judul Profil */
+.profile-fullname {
+  font-size: 2.8rem;
+  margin-bottom: 0.25rem;
+  color: #FF1E00;
+  text-align: center;
+}
+
+/* Tahun Juara */
+.profile-years {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Wadah Biografi */
+.profile-bio-container {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  color: #ddd;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.profile-bio-container p {
+  margin-bottom: 1.2rem;
+  font-size: 2.0rm;
+  text-align: justify;
+}
+
+/* Galeri Gambar Tambahan */
+.profile-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.profile-image-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  object-fit: cover;
+}
+
+/* Kutipan */
+.profile-quote {
+  font-style: italic;
+  border-left: 4px solid #FF1E00;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  color: #ccc;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+/* Penulis */
+.profile-author {
+  text-align: right;
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #15151E;
+  color: #ccc;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #FF1E00;
+}
+
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .champions-hero h1,
+  .profile-hero h1 {
+    font-size: 3.5rem; 
+    letter-spacing: 2px;
+  }
+  .driver-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+  }
+  .driver-card {
+    max-width: 100%;
+    height: auto;
+  }
+  .driver-card .card-image img {
+    width: 100%;
+    margin-top: 0;
+  }
+  .profile-container {
+    padding: 1rem;
+  }
+  .profile-fullname {
+    font-size: 2.2rem;
+  }
+  .profile-years {
+    font-size: 1.1rem;
+  }
+  .profile-image-gallery {
+    grid-template-columns: 1fr;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links {
+    margin-top: 10px;
+  }
+  .footer-links a {
+    margin: 0 8px;
+  }
+}

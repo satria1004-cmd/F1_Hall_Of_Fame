@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Hall of Fame</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="f1logo.png" alt="F1" class="f1-logo" />
+        </a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="champions.html">Champions</a></li>
+        <li><a href="result.html">Result</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop>
+      <source src="f1-background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hall Of Fame</h1>
+        <h2 class="f1-title">Formula 1</h2>
+        <div class="buttons">
+          <a href="champions.html" class="btn-primary">Driver Champs</a>
+          <a href="result.html" class="btn-secondary">Driver Standings</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    
+    <section class="section-container">
+      <div class="section-header">
+        <h2>Driver Standings 2025 Season</h2>
+        <a href="result.html?tab=drivers" class="view-all">View All</a>
+      </div>
+
+      <div class="driver-cards" >
+        
+        <div class="driver-card">
+          <div class="card-top">
+            <span class="rank">1</span>
+            <span class="team-name">McLaren</span>
+          </div>
+          <div class="driver-info">
+            <img src="Lando_Norris.jfif" alt="Norris" class="driver-img">
+            <div>
+              <h3>Lando Norris</h3>
+              <span class="nationality">GBR</span>
+            </div>
+          </div>
+          <div class="points-area">
+            <div class="progress-bar"><div class="fill" style="width: 100%;"></div></div>
+            <span class="points">423</span>
+          </div>
+        </div>
+
+        <div class="driver-card">
+          <div class="card-top">
+            <span class="rank">2</span>
+            <span class="team-name">Red Bull</span>
+          </div>
+          <div class="driver-info">
+             <img src="max.jpeg" alt="Max" class="driver-img">
+            <div>
+              <h3>Max Verstappen</h3>
+              <span class="nationality">NED</span>
+            </div>
+          </div>
+          <div class="points-area">
+            <div class="progress-bar"><div class="fill" style="width: 95%;"></div></div>
+            <span class="points">410</span>
+          </div>
+        </div>
+
+        <div class="driver-card">
+          <div class="card-top">
+            <span class="rank">3</span>
+            <span class="team-name">McLaren</span>
+          </div>
+          <div class="driver-info">
+             <img src="oscar.jpeg" alt="Piastri" class="driver-img oscar-fix">
+            <div>
+              <h3>Oscar Piastri</h3>
+              <span class="nationality">AUS</span>
+            </div>
+          </div>
+          <div class="points-area">
+            <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+            <span class="points">421</span>
+          </div>
+        </div>
+
+
+        <div class="driver-card">
+          <div class="card-top">
+            <span class="rank">4</span>
+            <span class="team-name">Mercedes</span>
+          </div>
+          <div class="driver-info">
+             <img src="George_Russell.jfif" alt="Russell" class="driver-img">
+            <div>
+              <h3>George Russell</h3>
+              <span class="nationality">GBR</span>
+            </div>
+          </div>
+          <div class="points-area">
+            <div class="progress-bar"><div class="fill" style="width: 70%;"></div></div>
+            <span class="points">319</span>
+          </div>
+        </div>
+        
+        <div class="driver-card">
+          <div class="card-top">
+            <span class="rank">5</span>
+            <span class="team-name">Ferrari</span>
+          </div>
+          <div class="driver-info">
+             <img src="leclerc.jpeg" alt="Leclerc" class="driver-img">
+            <div>
+              <h3>Charles Leclerc</h3>
+              <span class="nationality">MON</span>
+            </div>
+          </div>
+          <div class="points-area">
+            <div class="progress-bar"><div class="fill" style="width: 60%;"></div></div>
+            <span class="points">242</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <div class="section-header">
+        <h2>Team Standings 2025 Season</h2>
+      </div>
+
+      <div class="team-cards">
+        
+        <div class="team-card mercedes">
+          <div class="team-header">
+            <span class="team-rank">2<sup>ND</sup></span>
+            <span class="team-pts">398<sub>PTS</sub></span>
+          </div>
+          <h3 class="team-title">Mercedes</h3>
+          <img src="mercedes.png" alt="Mercedes Car" class="car-img">
+        </div>
+
+        <div class="team-card mclaren main-team">
+          <div class="team-header">
+            <span class="team-rank">1<sup>ST</sup></span>
+            <span class="team-pts">756<sub>PTS</sub></span>
+          </div>
+          <h3 class="team-title">McLaren</h3>
+          <img src="mclaren.png" alt="McLaren Car" class="car-img">
+        </div>
+
+        <div class="team-card redbull">
+          <div class="team-header">
+            <span class="team-rank">3<sup>RD</sup></span>
+            <span class="team-pts">366<sub>PTS</sub></span>
+          </div>
+          <h3 class="team-title">Red Bull Racing</h3>
+          <img src="redbull.png" alt="Red Bull Car" class="car-img">
+        </div>
+
+      </div>
+
+      <div class="view-more-container">
+        <a href="result.html?tab=teams" class="btn-view-more">View More >></a>
+        
+      </div>
+    </section>
+
+    </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Sir Dhan.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formula 1 Results</title>
+  <link rel="stylesheet" href="result.css">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<script src="script.js"></script>
+<body>
+  <nav class="navbar">
+
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="f1logo.png" alt="F1" class="f1-logo" />
+        </a>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="champions.html">Champions</a></li>
+      <li><a href="#" class="active">Result</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero result-hero">
+    <h1>RESULT</h1>
+  </section>
+
+  <div class="result-tabs">
+    <button class="tab-button active" data-tab="drivers">DRIVER</button> | <button class="tab-button" data-tab="teams">TEAMS</button> </div>
+
+  <div class="standings-container">
+    <div id="main-content"> <section class="top-drivers">
+        <div class="driver-card-result blue" id="oscar-card">
+          <div class="position">2<sup class="position-suffix">ND</sup></div>
+          <div class="driver-name">Max Verstappen</div>
+          <div class="top-3-nationality-container">
+                <img src="netherland.jfif" alt="netherland" class="driver-nationality" id="netherland-flag">
+              </div>
+          <div class="points">421<sup class="points-suffix">PTS</sup></div>
+          <img src="redbull-logo.jfif" alt="Red Bull" class="logo-image">
+          <img src="verstappen.png" alt="Max Verstappen" class="driver-image" id="max-img">
+        </div>
+
+        <div class="driver-card-result orange" id="lando-card">
+          <div class="position">1<sup class="position-suffix">ST</sup></div>
+          <div class="driver-name">Lando Norris </div>
+          <div class="top-3-nationality-container">
+                <img src="UK.jfif" alt="UnitedKingdom" class="driver-nationality" id="uk-flag">
+              </div>
+          <div class="points">423<sup class="points-suffix">PTS</sup></div>
+          <img src="McLaren-logo.jfif" alt="Mclaren" class="logo-image">
+          <img src="norris.png" alt="Lando Norris" class="driver-image">
+        </div>
+
+        <div class="driver-card-result orange" id="max-card">
+          <div class="position">3<sup class="position-suffix">RD</sup></div>
+          <div class="driver-name">Oscar Piastri</div>
+          <div class="top-3-nationality-container">
+                <img src="australia.jfif" alt="Australia" class="driver-nationality" id="australia-flag">
+              </div>
+          <div class="points">410<sup class="points-suffix">PTS</sup></div>
+          <img src="McLaren-logo.jfif" alt="Mclaren" class="logo-image" id="redbull-logo">
+          <img src="piastri.png" alt="Oscar Piastri" class="driver-image" id="oscar-img">
+        </div>
+      </section>
+
+      <section class="ranking-table">
+        <div class="table-header">
+          <div>Pos</div>
+          <div>Driver</div>
+          <div>Nationality</div>
+          <div>Team</div>
+          <div>PTS</div>
+        </div>
+
+        <div class="table-row">
+          <div>4.</div>
+          <div class="driver-info">
+            <img src="george.png" alt="George Russell" class="driver-avatar" id="mercedes-img">
+            George Russell
+          </div>
+          <div class="nationality-container">
+            <img src="UK.jfif" alt="UnitedKingdom" class="driver-nationality" id="uk-flag">
+            United Kingdom
+          </div>
+          <div class="team-container">
+            <img src="mercedes-logo.jfif" alt="Mercedes" class="teams-logo" id="mercedeslogo-img">
+            Mercedes
+          </div>
+          <div>319</div>
+        </div>
+
+        <div class="table-row">
+          <div>5.</div>
+          <div class="driver-info">
+            <img src="charles.png" alt="Charles Leclerc" class="driver-avatar" id="ferrari-img">
+            Charles Leclerc
+          </div>
+          <div class="nationality-container">
+            <img src="monaco.png" alt="Monaco" class="driver-nationality" id="monaco-flag">
+            Monaco
+          </div>
+          <div class="team-container">
+            <img src="ferrari-logo.jfif" alt="logo-Ferrari" class="teams-logo" id="ferrari-logo-img">
+            Ferrari
+          </div>
+          <div>242</div>
+        </div>
+
+        <div class="table-row">
+          <div>6.</div>
+          <div class="driver-info">
+            <img src="hamilton.png" alt="Lewis Hamilton" class="driver-avatar" id="ferrari-img">
+            Lewis Hamilton
+          </div>
+          <div class="nationality-container">
+            <img src="UK.jfif" alt="UnitedKingdom" class="driver-nationality" id="uk-flag">
+            United Kingdom
+          </div>
+          <div class="team-container">
+            <img src="ferrari-logo.jfif" alt="logo-ferrari" class="teams-logo" id="ferrarilogo-img">
+            Ferrari
+          </div>
+          <div>156</div>
+        </div>
+
+        <div class="table-row">
+          <div>7.</div>
+          <div class="driver-info">
+            <img src="antonelli.png" alt="Kimi Antonelli" class="driver-avatar" id="mercedes-img">
+            Kimi Antonelli
+          </div>
+          <div class="nationality-container">
+            <img src="italy.jfif" alt="Italy" class="driver-nationality" id="italy-flag">
+            Italy
+          </div>
+          <div class="team-container">
+            <img src="mercedes-logo.jfif" alt="Mercedes" class="teams-logo" id="ferrarilogo-img">
+            Mercedes
+          </div>
+          <div>150</div>
+        </div>
+
+        <div class="table-row">
+          <div>8.</div>
+          <div class="driver-info">
+            <img src="albon.png" alt="Alexander Albon" class="driver-avatar" id="williams-img">
+            Alexander Albon
+          </div>
+          <div class="nationality-container">
+            <img src="thailand.jfif" alt="Thailand" class="driver-nationality" id="thailand-flag">
+            Thailand
+          </div>
+          <div class="team-container">
+            <img src="williams-logo.jfif" alt="Williams" class="teams-logo" id="williasmlogo-img">
+            Williams
+          </div>
+          <div>73</div>
+        </div>
+
+        <div class="table-row">
+          <div>9.</div>
+          <div class="driver-info">
+            <img src="sainz.png" alt="Carlos Sainz" class="driver-avatar" id="williams-img">
+            Carlos Sainz
+          </div>
+          <div class="nationality-container">
+            <img src="spain.jfif" alt="Spain" class="driver-nationality" id="spain-flag">
+            Spain
+          </div>
+          <div class="team-container">
+            <img src="williams-logo.jfif" alt="Williams" class="teams-logo" id="williasmlogo-img">
+            Williams
+          </div>
+          <div>64</div>
+        </div>
+
+        <div class="table-row">
+          <div>10.</div>
+          <div class="driver-info">
+            <img src="alonso.png" alt="Fernando Alonso" class="driver-avatar" id="astonmartin-img">
+            Fernando Alonso
+          </div>
+          <div class="nationality-container">
+            <img src="spain.jfif" alt="Spain" class="driver-nationality" id="spain-flag">
+            Spain
+          </div>
+          <div class="team-container">
+            <img src="astonmartin-logo.jfif" alt="Aston Martin" class="teams-logo" id="astonamrtinlogo-img">
+            Aston Martin
+          </div>
+          <div>56</div>
+        </div>
+
+        <div class="table-row">
+          <div>11.</div>
+          <div class="driver-info">
+            <img src="hulkenberg.png" alt="Nico Hulkenberg" class="driver-avatar" id="kicksauber-img">
+            Nico Hulkenberg
+          </div>
+          <div class="nationality-container">
+            <img src="german.jfif" alt="German" class="driver-nationality" id="german-flag">
+            Germany
+          </div>
+          <div class="team-container">
+            <img src="kicksauber.jfif" alt="Kicksauber" class="teams-logo" id="kicksauberlogo-img">
+            Kick Sauber
+          </div>
+          <div>51</div>
+        </div>
+
+        <div class="table-row">
+          <div>12.</div>
+          <div class="driver-info">
+            <img src="hadjar.png" alt="Isack Hadjar" class="driver-avatar" id="racingbulls-img">
+            Isack Hadjar
+          </div>
+          <div class="nationality-container">
+            <img src="france.jfif" alt="France" class="driver-nationality" id="france-flag">
+            France
+          </div>
+          <div class="team-container">
+            <img src="racingbull-logo.jfif" alt="Racing Bulls" class="teams-logo" id="racingbullslogo-img">
+            Racing Bulls
+          </div>
+          <div>51</div>
+        </div>
+
+        <div class="table-row">
+          <div>13.</div>
+          <div class="driver-info">
+            <img src="bearman.png" alt="Oliver Bearman" class="driver-avatar" id="haas-img">
+            Oliver Bearman
+          </div>
+          <div class="nationality-container">
+            <img src="UK.jfif" alt="UnitedKingdom" class="driver-nationality" id="uk-flag">
+            United Kingdom
+          </div>
+          <div class="team-container">
+            <img src="haas-logo.jfif" alt="Haas F1 Team" class="teams-logo" id="haaslogo-img">
+            Haas F1 Team
+          </div>
+          <div>41</div>
+        </div>
+
+        <div class="table-row">
+          <div>14.</div>
+          <div class="driver-info">
+            <img src="lawson.webp" alt="Liam Lawson" class="driver-avatar" id="racingbulls-img">
+            Liam Lawson
+          </div>
+          <div class="nationality-container">
+            <img src="new zealand.jfif" alt="New Zealand" class="driver-nationality" id="newzealand-flag">
+            New Zealand
+          </div>
+          <div class="team-container">
+            <img src="racingbull-logo.jfif" alt="Racing Bulls" class="teams-logo" id="racingbullslogo-img">
+            Racing Bulls
+          </div>
+          <div>38</div>
+        </div>
+
+        <div class="table-row">
+          <div>15.</div>
+          <div class="driver-info">
+            <img src="esteban.png" alt="Esteban Ocon" class="driver-avatar" id="haas-img">
+            Esteban Ocon
+          </div>
+          <div class="nationality-container">
+            <img src="france.jfif" alt="France" class="driver-nationality" id="france-flag">
+            France
+          </div>
+          <div class="team-container">
+            <img src="haas-logo.jfif" alt="Haas F1 Team" class="teams-logo" id="haaslogo-img">
+            Haas F1 Team
+          </div>
+          <div>38</div>
+        </div>
+
+        <div class="table-row">
+          <div>16.</div>
+          <div class="driver-info">
+            <img src="stroll.png" alt="Lance Stroll" class="driver-avatar" id="astonmartin-img">
+            Lance Stroll
+          </div>
+          <div class="nationality-container">
+            <img src="canada.jfif"  alt="Canada" class="driver-nationality" id="canada-flag">
+            Canada
+          </div>
+          <div class="team-container">
+            <img src="astonmartin-logo.jfif" alt="Aston Martin" class="teams-logo" id="astonamrtinlogo-img">
+            Aston Martin
+          </div>
+          <div>33</div>
+        </div>
+
+        <div class="table-row">
+          <div>17.</div>
+          <div class="driver-info">
+            <img src="tsunoda.png" alt="Yuki Tsunoda" class="driver-avatar" id="redbull-img">
+            Yuki Tsunoda
+          </div>
+          <div class="nationality-container">
+            <img src="japan.jfif" alt="Japan" class="driver-nationality" id="japan-flag">
+            Japan
+          </div>
+          <div class="team-container">
+            <img src="redbull-logo.jfif" alt="Red Bull Racing" class="teams-logo" id="redbulllogo-img">
+            Red Bull Racing
+          </div>
+          <div>33</div>
+        </div>
+
+        <div class="table-row">
+          <div>18.</div>
+          <div class="driver-info">
+            <img src="gasly.png" alt="Pierre Gasly" class="driver-avatar" id="alpine-img">
+            Pierre Gasly
+          </div>
+          <div class="nationality-container">
+            <img src="france.jfif" alt="France" class="driver-nationality" id="france-flag">
+            France
+          </div>
+          <div class="team-container">
+            <img src="alpine-logo.jpg" alt="Alpine" class="teams-logo" id="alpinelogo-img">
+            Alpine
+          </div>
+          <div>22</div>
+        </div>
+
+        <div class="table-row">
+          <div>19.</div>
+          <div class="driver-info">
+            <img src="borteleto.png" alt="Gabriel Bortoleto" class="driver-avatar" id="kicksauber-img">
+            Gabriel Bortoleto
+          </div>
+          <div class="nationality-container">
+            <img src="brazil.jfif" alt="Brazil" class="driver-nationality" id="brazil-flag">
+            Brazil
+          </div>
+          <div class="team-container">
+            <img src="kicksauber.jfif" alt="Kick Sauber" class="teams-logo" id="kicksauberlogo-img">
+            Kick Sauber
+          </div>
+          <div>19</div>
+        </div>
+
+        <div class="table-row">
+          <div>20.</div>
+          <div class="driver-info">
+            <img src="colapinto.png" alt="Franco Colapinto" class="driver-avatar" id="alpine-img">
+            Franco Colapinto
+          </div>
+          <div class="nationality-container">
+            <img src="argentina.jfif" alt="Argentina" class="driver-nationality" id="argentina-flag">
+            Argentina
+          </div>
+          <div class="team-container">
+            <img src="alpine-logo.jpg" alt="Alpine" class="teams-logo" id="alpinelogo-img">
+            Alpine
+          </div>
+          <div>0</div>
+        </div>
+
+        <div class="table-row">
+          <div>21.</div>
+          <div class="driver-info">
+            <img src="doohan.avif" alt="Jack Doohan" class="driver-avatar"  id="doohan-img">
+            Jack Doohan
+          </div>
+          <div class="nationality-container">
+            <img src="australia.jfif" alt="Australia" class="driver-nationality" id="australia-flag">
+            Australia
+          </div>
+          <div class="team-container">
+            <img src="alpine-logo.jpg" alt="Alpine" class="teams-logo" id="alpinelogo-img">
+            Alpine
+          </div>
+          <div>0</div>
+        </div>
+      
+      </section>
+    </div> </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Sir Dhan.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

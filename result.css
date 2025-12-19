@@ -1,0 +1,734 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0B0C10;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+.navbar .f1-logo {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #FF1E00;
+}
+
+
+/* --- HERO SECTION (Untuk Result Page) --- */
+.result-hero {
+  position: relative;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+  overflow: hidden;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.result-hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FF1E00;
+  text-shadow: 0 0 10px rgba(255, 30, 0, 0.5);
+}
+
+/* --- MAIN CONTENT (Container Utama seperti di Home) --- */
+main {
+  padding: 20px;
+  max-width: 1300px;
+  margin: 30px auto;
+  margin-top: 100px;
+}
+
+/* --- SECTION CONTAINER (Sama seperti Home) --- */
+.section-container {
+  margin-bottom: 60px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+
+/* --- CUSTOM STYLES FOR RESULT PAGE --- */
+.result-tabs {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.result-tabs .tab-button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #ccc;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+  text-decoration: none;
+}
+
+.result-tabs .tab-button:hover,
+.result-tabs .tab-button.active {
+  color: #FF1E00;
+  border-bottom: 2px solid #FF1E00;
+}
+
+
+/* --- STANDINGS CONTAINER (Baru) --- */
+.standings-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.top-drivers {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.driver-card-result {
+  width: 370px;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  text-align: center;
+  background-color: #15151E;
+  margin: 1px;
+}
+
+.driver-card-result.orange {
+  background: linear-gradient(60deg, #B34E00, #F37600);
+  /* box-shadow: 0 8px 20px #F37600;*/
+  
+}
+
+.driver-card-result.blue {
+  background: linear-gradient(60deg, #061D41, #1e4eb3);
+}
+
+#oscar-card{
+  height: 410px;
+  top: 40px;
+  
+}
+
+#oscar-img{
+margin-top: 95px;
+}
+
+#max-card{
+  height: 390px;
+  top: 60px;
+}
+
+#max-img{
+  margin-top: 95px;
+}
+
+.position-suffix {
+  font-size: 0.6em;
+  vertical-align: super;
+}
+
+.points-suffix{
+  font-size: 0.6em;
+  vertical-align: super;
+  
+}
+
+.position {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  /*background: rgba(0, 0, 0, 0.6);*/
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.driver-name {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.points {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /*margin-top: 0.5rem;*/
+}
+
+.driver-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  margin-top: 8.5rem;
+}
+
+.top-3-nationality-container{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  left: 20px;
+  top: 90px;
+  object-fit: cover;
+}
+
+.logo-image{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  right: 20px;
+  object-fit: cover;
+}
+
+
+#ferrari-img{
+  background-color: #CE0031;
+}
+
+#mercedes-img {
+    background-color: #00D1B1;
+}
+
+#williams-img{
+  background-color: #099EDE;
+}
+
+#redbull-img{
+  background-color: #061D41;
+}
+
+#kicksauber-img{
+    background-color: #01FC00;
+}
+
+#racingbulls-img{
+  background-color: #5170FF;
+}
+
+#haas-img{
+  background-color: white;
+}
+
+#astonmartin-img{
+  background-color: #1C544D;
+}
+
+#alpine-img{
+  background-color: #00A1E8;
+}
+
+.ranking-table {
+  background-color: #15151E;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  width: 100%;
+  max-width: 92%;
+  margin: 0 auto;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 0.4fr 1.1fr 1.4fr 1.2fr 0.2fr;
+  padding: 1rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 0.4fr 1.1fr 1.4fr 1.2fr 0.2fr;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  align-items: center;
+  color: white;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.driver-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.driver-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+#doohan-img{
+  object-fit: cover;
+  object-position: top;
+  border-radius: 100px;
+  margin-top: 0rem;
+  background-color: #00A1E8;
+}
+
+.team-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* .team-logo { 
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: fill;
+}*/
+
+.nationality-container{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+}
+.driver-nationality{
+  gap: 0.5rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1,1);
+  transform-origin: center ;
+  align-items: center;
+
+}
+/* #canada-flag{
+  width: 40px;
+} */
+
+.teams-logo{
+  /* display: flex; */
+  gap: 0.5rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1,1);
+  transform-origin: center ;
+  align-items: center;
+}
+
+/* #mercedeslogo-img{ 
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1,1);
+  transform-origin: center ;
+/* } */
+
+/* --- FOOTER STYLE BARU --- */
+footer {
+    background-color: #15151E;
+    color: #ccc;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FF1E00;
+}
+
+@media (max-width: 768px) {
+  .result-hero h1 {
+    font-size: 2.5rem;
+  }
+  .top-drivers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .driver-card-result {
+    width: 90%;
+    max-width: 350px;
+  }
+  .table-header,
+  .table-row {
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    font-size: 0.85rem;
+  }
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .footer-links {
+      margin-top: 10px;
+  }
+  .footer-links a {
+      margin: 0 8px;
+  }
+}
+
+
+/* --- TAB CONTENT (Baru) --- */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* --- TEAMS STANDINGS (Baru) --- */
+.top-teams {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.top-teams
+.team-card-result .position {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  /* background: rgba(0, 0, 0, 0.6); */
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
+.driver-pair .driver-name {
+  font-size: 0.9rem;
+}
+
+.team-card-result .points {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.team-car-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center bottom;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  max-height: 70%;
+}
+
+/* --- TAB NAVIGATION --- */
+.result-tabs {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.result-tabs .tab-button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #ccc;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+  text-decoration: none;
+  font: inherit;
+}
+
+.result-tabs .tab-button:hover,
+.result-tabs .tab-button.active {
+  color: #FF1E00;
+  border-bottom: 2px solid #FF1E00;
+}
+
+
+/* Target wadah utama untuk kartu tim di dalam #main-content */
+#main-content .top-teams {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+/* Atur lebar dan tata letak kartu tim agar muat 10 dalam satu baris */
+#main-content .team-card-result {
+  width: 850px;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 5px;
+}
+
+/* --- WARNA TIM --- */
+#main-content .team-card-result.mclaren { background: linear-gradient(60deg, #F58D00, #FF8700); }
+#main-content .team-card-result.redbull { background-color: #2B4372; }
+#main-content .team-card-result.ferrari { background-color: #CE0031  }
+#main-content .team-card-result.mercedes { background-color: #00D1B1; }
+#main-content .team-card-result.alpine { background-color: #00A1E8; }
+#main-content .team-card-result.astonmartin { background-color: #006663; }
+#main-content .team-card-result.williams { background-color: #099EDE; }
+#main-content .team-card-result.haas { background-color:  #B1B3B6 }
+#main-content .team-card-result.kicksauber {background-color: #01FC00; }
+#main-content .team-card-result.racingbulls { background-color:#5170FF }
+
+/* Gaya untuk header kiri (posisi dan poin) */
+#main-content .card-header-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  z-index: 10;
+}
+
+#main-content .card-header-left .position {
+  /* background: rgba(0, 0, 0, 0.6); */
+  padding: 0.3rem 0.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.teams-points {
+  font-size: 1.3rem;
+  color: white;
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  font-weight: 700;
+}
+.teams-points-suffix{
+  font-size: 0.6em;
+  
+}
+
+/* Gaya untuk nama pembalap (di tengah atas) */
+#main-content .team-drivers-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 100%;
+  z-index: 5;
+  
+}
+
+#main-content .driver-pair {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#main-content .driver-pair .driver-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#mclaren-driver{
+  background-color: #B34E00;
+}
+
+#mercedes-driver{
+  background-color: #006663;
+}
+
+#redbull-driver{
+  background-color: #061D41;
+}
+
+#ferrari-driver{
+  background-color: #871731;
+}
+
+#williams-driver{
+  background-color: #0c84b8;
+}
+
+#racingbulls-driver{
+  background-color: #2038a3;
+}
+
+#astonmartin-driver{
+  background-color: #368f8c;
+}
+
+#haas-driver{
+  background-color: white;
+}
+
+#kicksauber-driver{
+  background-color: #279a27;
+}
+
+#alpine-driver{
+  background-color: #047cb0;
+}
+
+#main-content .driver-pair .driver-name {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Gaya untuk logo tim (pojok kanan atas) */
+#main-content .team-logo-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+    border-radius: 50%;
+  z-index: 10;
+}
+
+#main-content .team-logo-container .team-logo-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Gaya untuk gambar mobil */
+#main-content .team-car-image {
+  width: 70%; 
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  max-height: 70%;
+}
