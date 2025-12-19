@@ -122,8 +122,8 @@ const drivers = [
     name: "Mika Häkkinen",
     years: ["1998", "1999"],
     teams: ["McLaren"],
-    image: "mika-hakkinen.WEBP", 
-    image1: "mika-hakkinen-hr.AVIF",
+    image: "mika-hakkinen.webp", 
+    image1: "mika-hakkinen-hr.avif",
     bio: [
       "Mika Pauli Häkkinen, dijuluki 'The Flying Finn', adalah pembalap Finlandia yang memenangkan dua gelar Juara Dunia (1998 dan 1999). Ia dikenal karena persaingannya yang sengit dengan Michael Schumacher."
     ],
@@ -134,8 +134,8 @@ const drivers = [
     name: "Jacques Villeneuve",
     years: ["1997"],
     teams: ["Williams"],
-    image: "jacques-villeneuve.AVIF",
-    image1: "jacques-villeneuve-hr.JPG",
+    image: "jacques-villeneuve.avif",
+    image1: "jacques-villeneuve-hr.jpg",
     bio: ["Pembalap Kanada satu-satunya yang pernah menjadi juara dunia F1."],
     author: "F1 Hall of Fame"
   },
@@ -144,8 +144,8 @@ const drivers = [
     name: "Damon Hill",
     years: ["1996"],
     teams: ["Williams"],
-    image: "damon-hill.AVIF",
-    image1: "damon-hill-hr.AVIF",
+    image: "damon-hill.avif",
+    image1: "damon-hill-hr.avif",
     bio: ["Putra Graham Hill yang mengikuti jejak ayahnya menjadi juara dunia."],
     author: "F1 Hall of Fame"
   },
@@ -157,7 +157,7 @@ const drivers = [
     name: "Michael Schumacher",
     years: ["1994", "1995", "2000", "2001", "2002", "2003", "2004"],
     teams: ["Benetton", "Ferrari"],
-    image: "schumacher.JFIF", 
+    image: "schumacher.jfif", 
     bio: [
       "Michael Schumacher adalah mantan pembalap Formula One Jerman yang memegang banyak rekor. Ia memenangkan tujuh gelar juara dunia, yang terakhir pada tahun 2004."
     ],
@@ -169,8 +169,8 @@ const drivers = [
     name: "Nigel Mansell",
     years: ["1992"],
     teams: ["Williams"],
-    image: "nigel-mansell.AVIF",
-    image1: "nigel-mansell-hr.AVIF",
+    image: "nigel-mansell.avif",
+    image1: "nigel-mansell-hr.avif",
     bio: ["Dikenal karena keberaniannya, ia mendominasi musim 1992 secara total."],
     author: "F1 Hall of Fame"
   },
@@ -180,8 +180,8 @@ const drivers = [
     name: "Ayrton Senna",
     years: ["1988", "1990", "1991"],
     teams: ["McLaren"],
-    image: "ayrton-senna.AVIF",
-    image1: "ayrton-senna-hr.AVIF",
+    image: "ayrton-senna.avif",
+    image1: "ayrton-senna-hr.avif",
     bio: ["Salah satu pembalap paling berpengaruh dan dicintai dalam sejarah olahraga bermotor."],
     author: "F1 Hall of Fame"
   },
@@ -191,8 +191,8 @@ const drivers = [
     name: "Alain Prost",
     years: ["1985", "1986", "1989", "1993"],
     teams: ["McLaren", "Williams"],
-    image: "alain-prost.WEBP",
-    image1: "alain-prost-hr.AVIF",
+    image: "alain-prost.webp",
+    image1: "alain-prost-hr.avif",
     bio: ["Dijuluki 'The Professor' karena kecerdasannya dalam strategi balapan."],
     author: "F1 Hall of Fame"
   },
@@ -319,4 +319,5 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+
 
