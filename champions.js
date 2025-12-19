@@ -18,8 +18,8 @@ const drivers = [
     name: "Max Verstappen",
     years: ["2021", "2022", "2023", "2024"],
     teams: ["Red Bull"],
-    image: "max-verstappen.JFIF", 
-    image1: "max-verstappen-hr.JPG",
+    image: "max-verstappen.jfif", 
+    image1: "max-verstappen-hr.jpg",
     bio: [
       "In 2021 24-year-old Max Verstappen became the 34th Formula 1 World Champion, taking the title from seven-time champion Lewis Hamilton amid controversy on the last lap of the last race. Driving on the limit – sometimes over it – their intense rivalry became a personal feud that pushed them far beyond the rest of the field. The enthralling battle between the ultra-confident Dutch youngster and the most successful driver in the sport’s history captured the imagination of a worldwide audience as never before.",
       "The 2021 Formula 1 World Championship was decided under highly controversial circumstances at the final race in Abu Dhabi. Race-long leader Lewis Hamilton, on old tires, saw his advantage wiped out by a late-race Safety Car. Red Bull's Max Verstappen pitted for fresh rubber. Against standard procedure, race control allowed only the five lapped cars separating the two rivals to un-lap themselves, setting the stage for a one-lap shootout. With a decisive tire advantage, Verstappen easily overtook Hamilton on the final lap to claim his first World Drivers' Championship.",
@@ -37,8 +37,8 @@ const drivers = [
     name: "Nico Rosberg",
     years: ["2016"],
     teams: ["Mercedes"],
-    image: "nico-rosberg.JFIF", 
-    image1: "nico-rosberg-hr.AVIF",
+    image: "nico-rosberg.jfif", 
+    image1: "nico-rosberg-hr.avif",
     bio: [
       "Nico Rosberg adalah mantan pembalap Formula One Jerman yang memenangkan Kejuaraan Dunia pada tahun 2016 bersama Mercedes, sebelum mengumumkan pensiun tak lama setelahnya."
     ],
@@ -51,8 +51,8 @@ const drivers = [
     name: "Sebastian Vettel",
     years: ["2010", "2011", "2012", "2013"],
     teams: ["Red Bull"],
-    image: "sebastian-vettel.JPG", 
-    image1: "sebastian-vettel-hr.JFIF",
+    image: "sebastian-vettel.jpg", 
+    image1: "sebastian-vettel-hr.jfif",
     bio: [
       "Sebastian Vettel adalah mantan pembalap Formula One Jerman yang memenangkan empat gelar juara dunia berturut-turut. Ia adalah pembalap termuda kedua yang menjadi Juara Dunia F1."
     ],
@@ -64,7 +64,7 @@ const drivers = [
     name: "Jenson Button",
     years: ["2009"],
     teams: ["Brawn GP"],
-    image: "jenson-button.JPG", 
+    image: "jenson-button.jpg", 
     bio: [
       "Jenson Button adalah mantan pembalap Formula One Inggris yang memenangkan Kejuaraan Dunia 2009. Ia dikenal karena gaya balapnya yang halus dan kemampuannya di lintasan basah."
     ],
@@ -76,8 +76,8 @@ const drivers = [
     name: "Lewis Hamilton",
     years: ["2008", "2014", "2015", "2017", "2018", "2019", "2020"],
     teams: ["Mercedes", "McLaren"],
-    image: "lewis-hamilton.JPG", 
-    image1: "lewis-hamilton-hr.JFIF",
+    image: "lewis-hamilton.jpg", 
+    image1: "lewis-hamilton-hr.jfif",
     bio: [
       "Lewis Carl Davidson Hamilton, born on January 7, 1985, in Stevenage, England, is a global icon whose influence transcends the sport of racing. Lewis grew up in a multi-racial family—his father, Anthony, is of Afro-Grenadian descent, and his mother, Carmen, is English. His parents separated when he was two, and while he spent time with his mother, he later moved in with his father, whom he credits as the primary source of his ambition and tenacity. Anthony Hamilton, who worked multiple jobs to fund his son's karting career, instilled an unwavering focus and determination.",
       "His extraordinary talent was evident from a young age, where he secured multiple national karting titles. At the age of 13, he was signed to the McLaren-Mercedes young driver program, a move that put him on the fast track to Formula 1. After clinching the GP2 Series title in 2006, Hamilton made a sensational F1 debut with McLaren in 2007. His performance during that rookie season is widely regarded as one of the greatest in F1 history, where he narrowly missed claiming the world title.",
@@ -95,8 +95,8 @@ const drivers = [
     name: "Kimi Räikkönen",
     years: ["2007"],
     teams: ["Ferrari"],
-    image: "raikkonen.JPG",
-    image1: "kimi-raikkonen-hr.JFIF", 
+    image: "raikkonen.jpg",
+    image1: "kimi-raikkonen-hr.jfif", 
     bio: [
       "Kimi Matias Räikkönen, dijuluki 'The Iceman', adalah pembalap Finlandia yang memenangkan Kejuaraan Dunia 2007 bersama Ferrari. Ia dikenal karena kepribadiannya yang tenang dan pendiam."
     ],
@@ -108,8 +108,8 @@ const drivers = [
     name: "Fernando Alonso",
     years: ["2005", "2006"],
     teams: ["Renault"],
-    image: "fernando-alonso.JFIF", 
-    image1: "fernando-alonso-hr.JFIF",
+    image: "fernando-alonso.jfif", 
+    image1: "fernando-alonso-hr.jfif",
     bio: [
       "Fernando Alonso Díaz adalah pembalap Spanyol yang memenangkan dua gelar juara dunia berturut-turut pada tahun 2005 dan 2006. Ia dikenal karena agresivitasnya dan kemampuan membalap yang serba bisa."
     ],
@@ -319,3 +319,4 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+
