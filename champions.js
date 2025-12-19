@@ -5,8 +5,8 @@ const drivers = [
     name: "Lando Norris",
     years: ["2025"],
     teams: ["McLaren"],
-    image: "lando-norris.JFIF", 
-    image1: "lando-norris-hr.JFIF",
+    image: "lando-norris.jfif", 
+    image1: "lando-norris-hr.jfif",
     bio: [
       "Lando Norris adalah pembalap Formula One Inggris yang memenangkan Kejuaraan Dunia perdananya pada tahun 2025 bersama McLaren. Ia dikenal karena kecepatan alaminya dan kepribadiannya yang ceria."
     ],
@@ -317,4 +317,5 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     console.log("Halaman tidak dikenali (tidak ada #driver-grid atau #profile-hero-section)");
   }
+
 });
